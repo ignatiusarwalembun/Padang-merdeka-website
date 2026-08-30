@@ -44,7 +44,7 @@ function validateReservation(body){
 
   app.get('/api/reservations/:id/status',async(req,res,next)=>{try{const r=await store.getReservation(req.params.id);if(!r)return res.status(404).json({error:'Reservasi tidak ditemukan.'});res.json({reservation:publicReservation(r)});}catch(e){next(e)}});
 
-  app.get('/api/reservations',adminAuth,async(req,res,next)=>{try{const limit=Math.min(Math.max(Number(req.query.limit)||200,1),500);const status=req.query.status&&allowedStatuses.has(req.query.status)?req.query.status:undefined;res.json({reservations:await store.listReservations({status,limit)});}catch(e){next(e)}});
+  app.get('/api/reservations',adminAuth,async(req,res,next)=>{try{const limit=Math.min(Math.max(Number(req.query.limit)||200,1),500);const status=req.query.status&&allowedStatuses.has(req.query.status)?req.query.status:undefined;res.json({reservations:await store.listReservations({status,limit})});}catch(e){next(e)}});
 
   app.patch('/api/reservations/:id/status',adminAuth,async(req,res,next)=>{try{
     const status=clean(req.body.status);if(!['confirmed','rejected'].includes(status))return res.status(400).json({error:'Status harus confirmed atau rejected.'});
