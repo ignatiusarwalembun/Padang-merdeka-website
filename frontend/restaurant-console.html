@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Padang Merdeka — Restaurant Console</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css?v=production-ready-1" />
+  <link rel="stylesheet" href="css/console.css?v=production-ready-1" />
+</head>
+<body class="console-body">
+  <aside class="console-sidebar">
+    <div class="console-brand brand"><span class="brand-mark">PM</span><span class="brand-copy"><strong>PADANG MERDEKA</strong><small>RESTAURANT CONSOLE</small></span></div>
+    <nav><button class="console-nav active" data-view="reservations">▦ Reservasi</button><button class="console-nav" data-view="activity">↻ Activity</button></nav>
+    <div class="console-side-bottom"><span class="live-chip"><i></i><span id="connectionLabel">CONNECTING</span></span><button class="secondary-btn" id="consoleTheme">Light / Dark</button></div>
+  </aside>
+
+  <main class="console-main">
+    <section class="console-auth" id="consoleAuth">
+      <div><small>ADMIN ACCESS</small><h2>Hubungkan console ke backend Railway.</h2><p>Masukkan <code>ADMIN_API_KEY</code> yang sama dengan environment variable di Railway. Key disimpan hanya di session browser ini.</p></div>
+      <form id="authForm"><input id="adminKey" type="password" placeholder="ADMIN_API_KEY" autocomplete="off" required><button class="primary-btn" type="submit">Connect</button></form>
+      <p class="console-auth-status" id="authStatus"></p>
+    </section>
+
+    <div id="consoleApp" class="console-app hidden">
+      <header class="console-topbar"><div><small>OPERASIONAL RESTORAN</small><h1>Reservasi</h1><p id="lastSync">Belum sinkron.</p></div><div class="console-actions"><button class="secondary-btn" id="refreshBtn">↻ Refresh</button><button class="secondary-btn" id="logoutBtn">Keluar</button></div></header>
+      <section class="console-stats"><article class="stat-card"><small>TOTAL</small><strong id="statTotal">0</strong><span>reservasi</span></article><article class="stat-card"><small>MENUNGGU</small><strong id="statPending">0</strong><span>perlu tindakan</span></article><article class="stat-card"><small>DITERIMA</small><strong id="statConfirmed">0</strong><span>confirmed</span></article><article class="stat-card"><small>TAMU DITERIMA</small><strong id="statGuests">0</strong><span>orang</span></article></section>
+
+      <section class="console-content" id="reservationsView"><div class="console-panel-head"><div><small>INCOMING RESERVATIONS</small><h2>Permintaan terbaru</h2></div><div class="console-filters"><button class="status-filter active" data-status="all">Semua</button><button class="status-filter" data-status="pending">Menunggu</button><button class="status-filter" data-status="confirmed">Diterima</button><button class="status-filter" data-status="rejected">Ditolak</button></div></div><div class="reservation-list" id="reservationList"></div></section>
+      <section class="console-content hidden" id="activityView"><div class="console-panel-head"><div><small>SYSTEM ACTIVITY</small><h2>Riwayat tindakan</h2></div></div><div class="activity-list" id="activityList"></div></section>
+    </div>
+  </main>
+
+  <script src="js/config.js?v=1"></script>
+  <script src="js/console.js?v=production-ready-1"></script>
+</body>
+</html>

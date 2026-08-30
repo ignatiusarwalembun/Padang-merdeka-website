@@ -1,0 +1,6 @@
+backend/node_modules/
+pos-connector/node_modules/
+backend/.env
+pos-connector/.env
+backend/data/db.json
+.DS_Store

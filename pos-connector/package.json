@@ -1,0 +1,13 @@
+{
+  "name": "padang-merdeka-pos-connector",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Local bridge from Railway POS jobs to a restaurant POS running on localhost.",
+  "main": "src/index.js",
+  "engines": {"node": ">=20"},
+  "scripts": {
+    "start": "node src/index.js",
+    "mock-pos": "node mock-pos.js"
+  },
+  "dependencies": {"dotenv":"^16.4.5"}
+}

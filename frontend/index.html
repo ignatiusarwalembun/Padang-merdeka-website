@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Konsep website premium Padang Merdeka Kota Tua: menu visual, rekomendasi, reservasi digital, layanan resmi dan integrasi operasional restoran." />
+  <title>Padang Merdeka — Kota Tua</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css?v=production-ready-1" />
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="ambient ambient-a" aria-hidden="true"></div>
+  <div class="ambient ambient-b" aria-hidden="true"></div>
+
+  <header class="site-header" id="top">
+    <div class="nav-wrap container">
+      <a class="brand" href="#top" aria-label="Padang Merdeka home">
+        <span class="brand-mark">PM</span>
+        <span class="brand-copy"><strong>PADANG MERDEKA</strong><small>KOTA TUA · JAKARTA</small></span>
+      </a>
+      <nav class="desktop-nav" aria-label="Navigasi utama">
+        <a href="#menu">Menu</a><a href="#experience">Pengalaman</a><a href="#services">Layanan</a><a href="#outlets">Outlet</a><a href="#visit">Lokasi</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="icon-theme" id="themeToggle" aria-label="Ubah mode tampilan"><span class="theme-sun">☀</span><span class="theme-moon">☾</span></button>
+        <button class="ghost-btn lang-btn" id="langToggle" aria-label="Ubah bahasa">ID / EN</button>
+        <button class="primary-btn compact" data-open-reservation>Reservasi</button>
+        <button class="menu-toggle" id="menuToggle" aria-label="Buka menu" aria-expanded="false"><span></span><span></span></button>
+      </div>
+    </div>
+    <div class="mobile-nav" id="mobileNav">
+      <a href="#menu">Menu</a><a href="#experience">Pengalaman</a><a href="#services">Layanan</a><a href="#outlets">Outlet</a><a href="#visit">Lokasi</a>
+      <button class="secondary-btn" id="mobileTheme">Ganti Light / Dark</button>
+      <button class="primary-btn" data-open-reservation>Reservasi Meja</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section-pad">
+      <div class="kota-tua-backdrop" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <div class="eyebrow"><span class="dot"></span> Satu Nusa · Satu Bangsa · Satu Selera</div>
+          <h1><span data-id="hero1">Rasa Minang yang</span><br><em data-id="hero2">punya cerita di Kota Tua.</em></h1>
+          <p class="hero-lead" data-id="heroLead">Nikmati ragam masakan Minang di tengah atmosfer Kota Tua Jakarta. Jelajahi menu secara visual, temukan rekomendasi, lalu pilih cara menikmati Padang Merdeka yang paling sesuai.</p>
+          <div class="hero-actions">
+            <a class="primary-btn magnetic" href="#menu">Jelajahi Menu</a>
+            <button class="secondary-btn magnetic" data-open-reservation>Reservasi Meja</button>
+          </div>
+          <div class="quick-proof">
+            <div><strong>Halal</strong><span>informasi resmi brand</span></div><div><strong>11 outlet</strong><span>di daftar resmi saat ini</span></div><div><strong>Jl. Lada No.1</strong><span>Kota Tua, Jakarta Barat</span></div>
+          </div>
+        </div>
+        <div class="hero-visual reveal delay-1" id="heroVisual">
+          <div class="hero-photo-card tilt-card image-safe">
+            <img src="https://anakjajan.com/wp-content/uploads/2017/03/dscf1350.jpg" data-fallback="food" alt="Aneka masakan Padang Merdeka" />
+            <div class="photo-overlay"></div>
+            <div class="photo-badge"><span>#SekaliPadangTetapMerdeka</span><strong>Menu Minang · Kota Tua</strong></div>
+          </div>
+          <div class="floating-card taste-card floaty"><span class="mini-label">CUSTOMER JOURNEY</span><div class="taste-row"><span>Explore</span><b>Menu</b></div><div class="taste-row"><span>Book</span><b>Reservasi</b></div><div class="taste-row"><span>Order</span><b>Platform resmi</b></div></div>
+          <div class="floating-card location-card floaty delay-float"><span>📍</span><div><small>Kota Tua</small><strong>Jl. Lada No. 1</strong></div></div>
+        </div>
+      </div>
+      <div class="scroll-cue">SCROLL <span>↓</span></div>
+    </section>
+
+    <section class="location-intro">
+      <div class="container location-intro-card reveal">
+        <div class="location-image image-safe"><img src="https://awsimages.detik.net.id/community/media/visual/2022/06/22/taman-fatahillah_169.jpeg?w=1200" data-fallback="kota" alt="Taman Fatahillah di Kota Tua Jakarta" /></div>
+        <div class="location-copy"><div class="eyebrow">KOTA TUA · JAKARTA</div><h2>Satu destinasi untuk jalan-jalan, satu tempat untuk kembali menikmati rasa Minang.</h2><p>Cabang Kota Tua berada di Jl. Lada No.1, Pinangsia, Taman Sari, Jakarta Barat — alamat yang tercantum pada kanal resmi Padang Merdeka.</p><a class="text-link" data-official="maps" target="_blank" rel="noopener">Buka lokasi resmi →</a></div>
+      </div>
+    </section>
+
+    <section class="choice-strip" id="services">
+      <div class="container choice-grid">
+        <article class="choice-card reveal"><div class="choice-icon">🍽️</div><div><small>MAKAN DI TEMPAT</small><h3>Reservasi tanpa pindah-pindah aplikasi.</h3><p>Permintaan reservasi masuk ke backend restoran lalu dapat diterima atau ditolak oleh tim.</p></div><button class="text-btn" data-open-reservation>Reservasi →</button></article>
+        <article class="choice-card reveal delay-1"><div class="choice-icon">🛵</div><div><small>DELIVERY RESMI</small><h3>Website membantu memilih, platform delivery menyelesaikan pesanan.</h3><p>Setelah melihat menu, customer tetap diarahkan ke GoFood, GrabFood, atau ShopeeFood.</p></div><a class="text-btn" href="#delivery">Pilih platform →</a></article>
+        <article class="choice-card reveal delay-2"><div class="choice-icon">🎁</div><div><small>HANTARAN & CATERING</small><h3>Layanan resmi tetap mudah ditemukan.</h3><p>Website premium tidak menggantikan kanal yang sudah berjalan; ia menyatukan semuanya dengan lebih jelas.</p></div><a class="text-btn" data-official="bio" target="_blank" rel="noopener">Lihat layanan →</a></article>
+      </div>
+    </section>
+
+    <section class="story section-pad" id="experience">
+      <div class="container story-grid">
+        <div class="story-visual reveal image-safe"><img src="https://manual.co.id/wp-content/uploads/2017/05/Padang-Merdeka-Rest_Pinangsia-3-980x719.jpg" data-fallback="interior" alt="Interior Padang Merdeka Kota Tua" /><div class="story-stat"><strong>01</strong><span>menu visual sebelum datang</span></div></div>
+        <div class="story-copy reveal delay-1"><div class="eyebrow">DIGITAL EXPERIENCE</div><h2>Website tidak perlu menggantikan semua sistem yang sudah bekerja.</h2><p>Perannya adalah membuat pengalaman customer lebih jelas: mengenal brand, menemukan menu, memilih layanan delivery, mengetahui outlet, dan melakukan reservasi.</p><div class="feature-list"><div><span>01</span><div><strong>Menu sebagai katalog premium</strong><p>Foto, deskripsi, karakter rasa, rekomendasi, dan pasangan menu tampil langsung tanpa membuka PDF lebih dulu.</p></div></div><div><span>02</span><div><strong>Delivery tetap memakai kanal resmi</strong><p>Tidak ada cart buatan ulang. Customer diarahkan ke platform yang memang menangani transaksi dan pengantaran.</p></div></div><div><span>03</span><div><strong>Operasional tersambung ke backend</strong><p>Reservasi masuk ke Restaurant Console dan setelah dikonfirmasi dapat diteruskan oleh POS Connector ke sistem lokal restoran.</p></div></div></div></div>
+      </div>
+    </section>
+
+    <section class="menu-section section-pad" id="menu">
+      <div class="container">
+        <div class="section-heading reveal"><div><div class="eyebrow">MENU EXPLORER</div><h2>Kenali hidangannya sebelum menentukan pilihan.</h2></div><p>Klik “Lihat Detail” untuk foto, deskripsi, karakter rasa, dan rekomendasi. Harga di demo ini adalah referensi dan harus disinkronkan dengan menu resmi outlet sebelum production.</p></div>
+
+        <div class="recommend-shell reveal">
+          <div class="recommend-heading"><div><span class="recommend-kicker">★ REKOMENDASI UNTUK PERTAMA KALI</span><h3>Pilihan awal untuk mengenal karakter rasa Padang Merdeka.</h3></div><div class="recommend-nav"><button id="recPrev" aria-label="Sebelumnya">←</button><button id="recNext" aria-label="Berikutnya">→</button></div></div>
+          <div class="recommend-track" id="recommendTrack"></div>
+        </div>
+
+        <div class="menu-toolbar reveal"><div class="filter-row" id="filterRow"><button class="filter active" data-filter="all">Semua</button><button class="filter" data-filter="daging">Daging</button><button class="filter" data-filter="ayam">Ayam</button><button class="filter" data-filter="seafood">Seafood</button><button class="filter" data-filter="sayur">Sayur</button><button class="filter" data-filter="side">Pelengkap</button></div><label class="search-box"><span>⌕</span><input id="menuSearch" type="search" placeholder="Cari rendang, ayam pop..." /></label></div>
+        <div class="menu-grid" id="menuGrid"></div>
+        <div class="official-menu-note reveal"><div><small>MENU RESMI</small><h3>Butuh daftar menu resmi lengkap?</h3><p>Katalog visual ini dirancang untuk discovery. Daftar resmi Padang Merdeka tetap tersedia melalui kanal resminya.</p></div><a class="secondary-btn" data-official="menu" target="_blank" rel="noopener">Buka Menu Resmi ↗</a></div>
+      </div>
+    </section>
+
+    <section class="delivery-section section-pad" id="delivery">
+      <div class="container">
+        <div class="section-heading reveal"><div><div class="eyebrow">ORDER DELIVERY</div><h2>Pilih layanan pemesanan yang sudah Anda gunakan.</h2></div><p>Transaksi, pembayaran, promo, dan pengantaran tetap ditangani oleh platform delivery resmi.</p></div>
+        <div class="delivery-grid">
+          <a class="delivery-card reveal" data-official="gofood" target="_blank" rel="noopener"><span>GO</span><div><small>ORDER DELIVERY</small><h3>GoFood</h3><p>Buka pilihan cabang Padang Merdeka di GoFood.</p></div><b>↗</b></a>
+          <a class="delivery-card reveal delay-1" data-official="grab" target="_blank" rel="noopener"><span>GR</span><div><small>ORDER DELIVERY</small><h3>GrabFood</h3><p>Pilih outlet dari kanal resmi Padang Merdeka.</p></div><b>↗</b></a>
+          <a class="delivery-card reveal delay-2" data-official="shopee" target="_blank" rel="noopener"><span>SP</span><div><small>ORDER DELIVERY</small><h3>ShopeeFood</h3><p>Pilih outlet dari kanal resmi Padang Merdeka.</p></div><b>↗</b></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="outlet-section section-pad" id="outlets">
+      <div class="container">
+        <div class="section-heading reveal"><div><div class="eyebrow">DAFTAR OUTLET</div><h2>Dari Kota Tua sampai Juanda.</h2></div><p>Daftar ini mengikuti outlet yang saat ini tercantum di halaman resmi Padang Merdeka. Gunakan pencarian untuk menemukan kota atau kawasan.</p></div>
+        <label class="outlet-search reveal"><span>⌕</span><input id="outletSearch" type="search" placeholder="Cari Kota Tua, Pluit, Bandung..." /></label>
+        <div class="outlet-grid" id="outletGrid"></div>
+      </div>
+    </section>
+
+    <section class="review-section section-pad" id="reviews"><div class="container review-grid"><div class="review-summary reveal"><div class="eyebrow">WHY THIS REDESIGN</div><h2>Lebih sedikit kebingungan, lebih jelas langkah berikutnya.</h2><div class="rating-large"><strong>4</strong><div><span>layer</span><small>Brand · Menu · Layanan · Operasional</small></div></div><p>Konsep ini mempertahankan kanal resmi Padang Merdeka, lalu menambahkan pengalaman visual dan reservasi digital di atasnya.</p></div><div class="review-cards reveal delay-1"><article><div class="stars">MENU</div><p>Customer bisa mengenali hidangan tanpa memulai dari file PDF.</p><span>Discovery layer</span></article><article><div class="stars">DELIVERY</div><p>GoFood, GrabFood dan ShopeeFood tetap menjadi jalur transaksi.</p><span>Conversion layer</span></article><article class="accent-review"><div class="quote-mark">↔</div><p>Reservasi dapat mengalir dari website publik ke Railway, Restaurant Console, lalu POS Connector di jaringan lokal restoran.</p><span>Operational layer</span></article></div></div></section>
+
+    <section class="visit section-pad" id="visit"><div class="container visit-card reveal"><div class="visit-copy"><div class="eyebrow">PADANG MERDEKA · KOTA TUA</div><h2>Temukan cabang Kota Tua di Jl. Lada No.1.</h2><div class="visit-info"><div><small>ALAMAT</small><strong>Jl. Lada No.1, RT.4/RW.6, Pinangsia, Taman Sari, Jakarta Barat 11110</strong></div><div><small>KAWASAN</small><strong>Kota Tua · Jakarta Barat</strong></div><div><small>LAYANAN</small><strong>Makan di tempat · reservasi · catering · delivery</strong></div></div><div class="visit-actions"><a class="primary-btn" data-official="maps" target="_blank" rel="noopener">Buka Google Maps ↗</a><button class="secondary-btn" data-open-reservation>Reservasi Meja</button></div></div><div class="visit-photo image-safe"><img src="https://hypeabis.id/assets/content/20250702233219_jibi13042024-BI-HIL-21-KOTA_TUA-1320240413033007832_crop.jpg" data-fallback="kota" alt="Kota Tua Jakarta" /><div class="visit-photo-overlay"><span>KOTA TUA</span><strong>Jakarta Barat</strong></div></div></div></section>
+  </main>
+
+  <footer><div class="container footer-grid"><div class="footer-brand"><span class="brand-mark">PM</span></div><p>Prototype independen untuk demonstrasi konsep digital Padang Merdeka. Bukan situs resmi Padang Merdeka.</p><div class="footer-links"><a href="#menu">Menu</a><a href="#outlets">Outlet</a><a data-official="instagram" target="_blank" rel="noopener">Instagram</a><a data-official="tiktok" target="_blank" rel="noopener">TikTok</a><a href="restaurant-console.html" target="_blank">Restaurant Console ↗</a></div></div></footer>
+
+  <div class="modal menu-detail-modal" id="menuDetailModal" aria-hidden="true"><div class="modal-backdrop" data-close-menu-detail></div><div class="menu-detail-card"><button class="icon-btn modal-close" data-close-menu-detail>×</button><div class="menu-detail-image image-safe"><img id="detailImage" alt="Foto menu"/><span id="detailBadge">Recommended</span></div><div class="menu-detail-copy"><div class="eyebrow" id="detailCategory">DAGING</div><h2 id="detailName">Rendang</h2><p class="detail-desc" id="detailDesc"></p><div class="taste-meters" id="detailTaste"></div><div class="detail-note"><small>KENAPA MENU INI MENARIK</small><p id="detailStory"></p></div><div class="detail-bottom detail-delivery"><div><small>REFERENSI HARGA</small><strong id="detailPrice">Rp0</strong></div><div class="detail-platforms"><small>INGIN MEMESAN?</small><div><a data-official="gofood" target="_blank" rel="noopener">GoFood ↗</a><a data-official="grab" target="_blank" rel="noopener">GrabFood ↗</a><a data-official="shopee" target="_blank" rel="noopener">ShopeeFood ↗</a></div></div></div></div></div></div>
+
+  <div class="modal" id="reservationModal" aria-hidden="true"><div class="modal-backdrop" data-close-reservation></div><div class="modal-card"><button class="icon-btn modal-close" data-close-reservation>×</button><div class="eyebrow">RESERVASI DIGITAL</div><h2>Kirim permintaan reservasi langsung ke tim restoran.</h2><p>Data dikirim ke backend Railway dan akan muncul di Restaurant Console untuk dikonfirmasi.</p><form id="reservationForm"><div class="form-grid"><label><span>Outlet</span><select required name="outlet" id="reservationOutlet"></select></label><label><span>Nama</span><input required name="name" autocomplete="name" placeholder="Nama Anda" /></label><label><span>Nomor WhatsApp</span><input required name="phone" inputmode="tel" autocomplete="tel" placeholder="08xxxxxxxxxx" /></label><label><span>Jumlah tamu</span><input required name="guests" type="number" min="1" max="50" value="2" /></label><label><span>Tanggal</span><input required name="date" type="date" /></label><label><span>Jam</span><input required name="time" type="time" min="10:00" max="22:00" /></label><label><span>Area (opsional)</span><select name="area"><option value="Bebas">Bebas</option><option value="Indoor">Indoor</option><option value="Smoking area">Smoking area</option></select></label></div><label><span>Catatan (opsional)</span><textarea name="note" rows="3" placeholder="Contoh: kursi anak / acara keluarga"></textarea></label><div class="form-status" id="reservationFormStatus" aria-live="polite"></div><button class="primary-btn full" id="reservationSubmit" type="submit">Kirim Permintaan Reservasi</button></form></div></div>
+
+  <div class="success-modal" id="reservationSuccess" aria-hidden="true"><div class="success-card"><span class="success-icon">✓</span><small>RESERVASI TERKIRIM</small><h3>Permintaan Anda sudah masuk ke sistem restoran.</h3><p id="successCopy">Tunggu konfirmasi dari tim restoran.</p><button class="primary-btn" id="closeSuccess">Tutup</button></div></div>
+  <div class="toast" id="toast">Selesai</div>
+
+  <script src="js/config.js?v=1"></script>
+  <script src="js/app.js?v=production-ready-1"></script>
+</body>
+</html>
