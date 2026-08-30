@@ -1,9 +1,8 @@
 window.PM_CONFIG = {
-  // Setelah backend Railway dideploy, ganti placeholder ini dengan URL Railway.
-  // Saat dibuka di localhost, frontend otomatis memakai http://localhost:3000.
+  // Saat dibuka di localhost, frontend memakai backend lokal. Production memakai Railway.
   API_BASE_URL: location.hostname === 'localhost' || location.hostname === '127.0.0.1'
     ? 'http://localhost:3000'
-    : 'https://YOUR-RAILWAY-SERVICE.up.railway.app',
+    : 'https://padang-merdeka-api-production.up.railway.app',
 
   OFFICIAL: {
     bio: 'https://bio.padangmerdeka.com/',
